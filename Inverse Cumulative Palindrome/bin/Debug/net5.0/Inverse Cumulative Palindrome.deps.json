@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Inverse Cumulative Palindrome/1.0.0": {
+        "runtime": {
+          "Inverse Cumulative Palindrome.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Inverse Cumulative Palindrome/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

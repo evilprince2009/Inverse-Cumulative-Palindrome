@@ -16,7 +16,7 @@ Problem statement goes below.
 
 ## Limitations
 
-I wans't able to find a result for those two numbers using this program.
+I wans't able to find a result for those two numbers below using this program.
 
 - 196
 - 788

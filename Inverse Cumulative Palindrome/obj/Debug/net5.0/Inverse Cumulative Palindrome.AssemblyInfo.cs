@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Inverse Cumulative Palindrome")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5c18524350b8f51679efa0b240699cfd9fec1988")]
 [assembly: System.Reflection.AssemblyProductAttribute("Inverse Cumulative Palindrome")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Inverse Cumulative Palindrome")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

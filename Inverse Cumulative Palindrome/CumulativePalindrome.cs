@@ -32,13 +32,13 @@ namespace Inverse_Cumulative_Palindrome
 
         private static string Reverse(string input)
         {
-            Stack<char> container = new Stack<char>();
+            Stack<char> container = new();
             foreach (char ch in input)
             {
                 container.Push(ch);
             }
 
-            StringBuilder result = new StringBuilder();
+            StringBuilder result = new();
             for (int i = 0; i < input.Length; i++)
             {
                 result.Append(container.Pop());

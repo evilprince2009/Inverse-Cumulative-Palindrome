@@ -22,7 +22,9 @@ namespace Inverse_Cumulative_Palindrome
             {
                 Console.WriteLine("Enter Input.");
                 long n = Convert.ToInt64(Console.ReadLine());
-                Console.WriteLine("Cumulative Palindromic number for " + n + " is " + CumulativePalindrome.GetPalindrome(n));
+                long result = CumulativePalindrome.GetPalindromeAndIteration(n)[0];
+                long iterations = CumulativePalindrome.GetPalindromeAndIteration(n)[1];
+                Console.WriteLine($"Cumulative Palindromic number for {n} is {result}, found after {iterations} iterations.");
                 Console.WriteLine();
             }
         }

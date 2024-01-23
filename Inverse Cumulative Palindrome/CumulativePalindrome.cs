@@ -1,29 +1,23 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace Inverse_Cumulative_Palindrome
 {
     public class CumulativePalindrome
     {
-        public static long GetPalindrome(long input)
+        public static long[] GetPalindromeAndIteration(long input)
         {
             long desiredNumber = input;
-
+            long counter = 0;
             while (!CheckPalindrome(desiredNumber.ToString()))
             {
-                if (CheckPalindrome(desiredNumber.ToString()))
-                {
-                    return desiredNumber;
-                }
                 desiredNumber += Convert.ToInt64(Reverse(desiredNumber.ToString()));
+                counter++;
             }
 
-            return desiredNumber;
+            return [desiredNumber, counter];
         }
 
-
-        // Modification of below methods may break the code
         private static bool CheckPalindrome(string input)
         {
             string reversedNumber = Reverse(input);
@@ -32,19 +26,7 @@ namespace Inverse_Cumulative_Palindrome
 
         private static string Reverse(string input)
         {
-            Stack<char> container = new();
-            foreach (char ch in input)
-            {
-                container.Push(ch);
-            }
-
-            StringBuilder result = new();
-            for (int i = 0; i < input.Length; i++)
-            {
-                result.Append(container.Pop());
-            }
-
-            return result.ToString();
+            return new string(input.Reverse().ToArray());
         }
     }
 }

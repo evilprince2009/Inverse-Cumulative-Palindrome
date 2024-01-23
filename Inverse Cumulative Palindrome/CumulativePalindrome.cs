@@ -7,21 +7,21 @@ namespace Inverse_Cumulative_Palindrome
     {
         public static long[] GetPalindromeAndIteration(long input)
         {
-            long desiredNumber = input;
+            long desired_number = input;
             long counter = 0;
-            while (!CheckPalindrome(desiredNumber.ToString()))
+            while (!CheckPalindrome(desired_number.ToString()))
             {
-                desiredNumber += Convert.ToInt64(Reverse(desiredNumber.ToString()));
+                desired_number += Convert.ToInt64(Reverse(desired_number.ToString()));
                 counter++;
             }
 
-            return [desiredNumber, counter];
+            return [desired_number, counter];
         }
 
         private static bool CheckPalindrome(string input)
         {
-            string reversedNumber = Reverse(input);
-            return String.Compare(input, reversedNumber, StringComparison.Ordinal) == 0;
+            string reversed_number = Reverse(input);
+            return String.Compare(input, reversed_number, StringComparison.Ordinal) == 0;
         }
 
         private static string Reverse(string input)
